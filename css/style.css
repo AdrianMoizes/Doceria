@@ -88,34 +88,46 @@ section {
 	padding-left: 0;
 }
 .sessao-bemvindo-content {
-    padding-left: 50px;
+    padding: 50px;
+	background-color: #10496e;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 55px;
+	display: flex;
+	justify-content: space-evenly;
 }
 #sessao-bemvindo .banner {
     height: 500px;
     background-image: url(../img/banner2.jpg);
     background-position: center;
     background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 #sessao-bemvindo h1 {
-    margin-top: 70px;
+	color: #2790C6;
+    padding: 0;
 	text-align: center;
+	box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+	background-color: #373a3ce0;
+	width: 100%;
+	padding: 50px;
+	
 }
-#sessao-bemvindo h3{
+#sessao-bemvindo h2{
 	text-align: center;
-	margin-bottom: 50px;
+	padding: 100px 50px;
 	color: #10496e;
+	color: #ffffffd9;
 }
 #sessao-bemvindo::after, #sessao-sobre::after {
 	content: "";
 	display: block;
 	clear: both;
-	margin-bottom: 100px;
 }
 
 .sessao-minibanner {
 	width: 50%;
-	height: 600px;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	height: 500px;
 	border-radius: 10px;
 	background-image: url('../img/banner3.jpg');
 	background-position: center;
@@ -125,13 +137,15 @@ section {
 }
 .sessao-descricao {
 	left: 470px;
-	margin: 30px;
+	margin: 0px 30px;
+	width: 50%;
 }
 
 .sessao-descricao p, span {
 	line-height: 2;
 	font-size: 16px;
 	margin-bottom: 30px;
+	color: #ffffffde;
 }
 #mais {
 	display: none;
@@ -147,6 +161,7 @@ section {
 	text-align: center;
 	border: solid 1px #10496e;
 	cursor: pointer;
+	margin: 20px;
 }
 
 .sessao-bemvindo-btn:hover:hover {
@@ -157,7 +172,7 @@ section {
 
 #sessao-sobre .sessao-minibanner {
 	float: right;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	box-shadow: rgba(255, 255, 255, 0.25) 2px 12px 55px;
 	margin-right: 50px;
 	border-radius: 10px;
 	background-image: url('../img/banner4.jpg');
@@ -166,12 +181,20 @@ section {
 	margin: 20px;
 	width: 50%;
 }
-
-.sessao-descricao p strong {
-	color: #006599;
+#sessao-sobre {
+	background-image: url(../img/papel-preto-texturizado-liso.jpg);
 }
-.sessao-descricao h4 {
+
+.sessao-trabalho p {
+	color: #ffffffd8;
+	line-height: 2;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.sessao-trabalho strong, h4 {
 	color: #006599;
+	font-size: 25px;
+	margin-bottom: 50px;
 }
 /* galerias */
 
