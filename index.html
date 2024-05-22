@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>doceria</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
         <script src="script/script.js" defer></script>
@@ -12,30 +13,66 @@
         <div class="container">
             <div id="sidebar">
                 <div class="sidebar-conteiner">
-                    <img class="logo-doceria" src="img/stand.png" alt="Logo-doceria">
-                    <h2>Adrian Doces</h2>
-                    <nav>
-                        <ul>
-                            <li><a href="#sessao-bemvindo">Bem Vindo</a></li>
+
+                    <div id="user">
+                        <img class="logo-doceria" src="img/stand.png" alt="Logo-doceria" id="logo-doceria">
+                        <p id="user-infos">
+                            <h2 class="item-descricao">Adrian Doces</h2>
+                            <span class="item-descricao">
+                                A Doçura que Encanta!
+                            </span>
+                        </p>
+                    </div>
+               
+                    <nav id="doceria-infos">
+                        <ul id="side-itens">
+                            <li class="side-item active" >
+                                <a href="#sessao-bemvindo"> 
+                                    <i class="fa-solid fa-door-open" style="color: #f7f6fce1;"></i>
+                                    <span class="item-descricao">
+                                        Bem Vindo
+                                    </span>
+                                </a>
+                            </li>
                             
-                            <li><a href="#sessao-sobre">Nosso Trabalho</a></li>
+                            <li class="side-item">
+                                <a href="#sessao-sobre">
+                                    <i class="fa-solid fa-cookie-bite fa-flip-vertical" style="color: #f7f6fce1;"></i>
+                                    <span class="item-descricao">
+                                        Nosso Trabalho
+                                    </span> 
+                                </a>
+                            </li>
 
-                            <li><a href="#sessao-doces1">Doces 1</a></li>
+                            <li class="side-item">
+                                <a href="#sessao-doces1">
+                                    <i class="fa-solid fa-cake-candles" style="color: #f7f6fce1;"></i>
+                                    <span class="item-descricao">
+                                        Doces
+                                    </span>
+                                </a>
+                            </li>
 
-                            <li><a href="#sessao-doces2">Doces 2</a></li>
-
-                            <li><a href="#sessao-doces3">Doces 3</a></li>
-
-                            <li><a href="#sessao-contato">Entre Em Contato</a></li>
+                            <li class="side-item">
+                                <a href="#sessao-contato">
+                                    <i class="fa-solid fa-envelopes-bulk" style="color: #ffffff;"></i>
+                                    <span class="item-descricao">Entre Em Contato</span>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
+
+                    <button id="open-btn">
+                        <i id="open-btn-icon" class="fa-solid fa-caret-right"></i>
+                    </button>
                 </div>
+                
             </div>
-            <div class="content">
+            <div id="content">
                 <main>
                     <section id="sessao-bemvindo">
                         <div class="banner">
-                            <h1>Bem Vindo A Doceria Adrian Doces</h1>
+                            <h1>Bem Vindo A Doceria  Adrian Doces </h1>
                         </div>
                         <div class="sessao-bemvindo-content">
                             <div class="sessao-minibanner"></div>
