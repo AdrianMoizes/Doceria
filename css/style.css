@@ -10,7 +10,6 @@
 .container{
 	min-height: 100vh;
 	display: flex;
-	background-color: #609cb9;
 }
 
 /* Sidebar */
@@ -135,7 +134,7 @@
 	margin-left: 300px;
 	transition: 0.8s;
 }
-#content h2 {
+.sessao-content h2 {
     color: #2790C6;
 	font-size: 35px;
 	padding: 20px;
@@ -239,24 +238,18 @@
 }
 /* sessao sobre */
 
-#sessao-sobre .sessao-minibanner {
-	float: right;
-	margin-right: 50px;
-	border-radius: 10px;
-	background-position: center;
-	background-size: cover;
-	margin: 20px;
-	width: 50%;
-}
 #sessao-sobre {
 	background-image: url(../img/copie-ingredientes-de-espaco-para-biscoitos.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right;
+	border-radius: 20px;
+	
 }
 .sessao-content {
 	background-color: #0000009e;
 	padding: 50px;
+	border-radius: 20px;
 }
 .sessao-trabalho {
 	background-color: #373a3ce3;
@@ -269,11 +262,11 @@
 .sessao-trabalho p {
 	color: #ffffffb7;
 	line-height: 2;
-	font-size: 16px;
+	font-size: 22px;
 	text-align: center;
 }
 .sessao-trabalho strong {
-	font-size: 25px;
+	font-size: 30px;
 	color: #2790C6;	
 	display: flex;
 	justify-content: center;
@@ -282,6 +275,8 @@
 .sessao-content h2 {
 	text-align: center;
 	font-weight: 600;
+	margin-top: 20px;
+	padding: 10px;
 }
 
 .sessao-trabalho h4 {
@@ -293,124 +288,107 @@
 }
 
 /* galerias */
+#sessao-doces1 {
+	margin: 0 auto;
+	width: 95%;
+	text-align: center;
+}
+#sessao-doces1 input[type=radio] {
+	display: none;
+}
+#sessao-doces1 label {
+	cursor: pointer;
+	text-decoration: none;
+}
+#slides {
+	padding: 10px;
+	border: solid 3px #ccc;
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+}
+#overflow{
+	width: 100%;
+	overflow: hidden;
+}
+#slider1:checked ~ #slides .inner {
+	margin-left: 0;
+}
+#slider2:checked ~ #slides .inner {
+	margin-left: -100%;
+}
+#slider3:checked ~ #slides .inner {
+	margin-left: -200%;
+}
+#slider4:checked ~ #slides .inner {
+	margin-left: -300%;
+}
 
-.banner-galeria {
+#slides .inner {
+	transition: margin-left .8s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	width: 400%;
+	height: 600px;
+}
+#slides .slide {
+	width: 25%;
+	float: left;
+	display: block;
+	height: 520px;
+	color: #FFF;
+	border-radius: 5px;
+}
+#slides .slide-1{
+	background: url(../img/galeria1.jpg);
 	background-position: center;
 	background-size: cover;
-	display: inline-block;
-	height: 200px;
+}
+#slides .slide-2{
+	background: url(../img/galeria2.jpg);
+	background-position: left;
+	background-size: cover;
+}
+#slides .slide-3{
+	background: url(../img/galeria3.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#slides .slide-4{
+	background: url(../img/galeria4.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.slide-content {
+	padding: 10px;
+}
+#controle {
+	margin: -70px 0 0 0;
+	width: 100%;
+	height: 50px;
+	z-index: 3;
+	opacity: 1;
+}
+#controle label {
+	display: inline-flex;
+	transition: opacity 0.2s ease-out;
+	width: 30px;
+	height: 30px;
+	opacity: .4;
+	background-color: #2790C6;
+	border: 1px solid black;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+#controle label:hover{
+	opacity: 1;
 }
 
-#sessao-doces1, #sessao-doces2, #sessao-doces3 {
-	padding-right: 50px;
-	margin-bottom: 50px;
-}
-
-.doces1-imgs {
-	width: 18.8%;
-	margin-left: .5%;
-	margin-right: .5%;
-}
-
-#img1 {
-	background-image: url('../img/galeria1.jpg');
-	margin-left: 0;
-}
-
-#img2 {
-	background-image: url('../img/galeria2.jpg');
-}
-
-#img3 {
-	background-image: url('../img/galeria3.jpg');
-}
-
-#img4 {
-	background-image: url('../img/galeria4.jpg');
-}
-
-#img5 {
-	background-image: url('../img/galeria5.jpg');
-	margin-right: 0;
-}
-
-.doces2-imgs {
-	width: 32.3%;
-	margin-left: .5%;
-	margin-right: .5%;
-}
-
-#img6 {
-	background-image: url('../img/galeria6.jpg');
-	margin-left: 0;
-}
-
-#img7 {
-	background-image: url('../img/galeria7.jpg');
-}
-
-#img8 {
-	background-image: url('../img/galeria8.jpg');
-	margin-right: 0;
-}
-
-.doces3-imgs {
-	width: 23.9%;
-	margin-left: .5%;
-	margin-right: .5%;
-}
-
-#img9 {
-	background-image: url('../img/galeria9.jpg');
-	margin-left: 0;
-}
-
-#img10 {
-	background-image: url('../img/galeria10.jpg');
-}
-
-#img11 {
-	background-image: url('../img/galeria11.jpg');
-}
-
-#img12 {
-	background-image: url('../img/galeria12.jpg');
-	margin-right: 0;
-}
 
 /* contato */
 
-#form-contato {
-	width: 500px;
-}
 
-#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea {
-	display: block;
-	border: 1px solid #006599;
-	padding: 10px;
-	margin-bottom: 20px;
-	width: 100%;
-	font-size: 16px;
-	font-family: 'Open sans', sans-serif;
-}
 
-#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus {
-	border-color: #2790C6;
-}
 
-#form-contato textarea {
-	height: 150px;
-}
-
-#form-contato ::placeholder {
-	color: #2790C6;
-}
-
-#form-contato input[type=submit] {
-	margin-left: 0;
-	font-size: 16px;
-	width: 180px;
-}
 
 /* footer */
 
