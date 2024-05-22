@@ -10,6 +10,7 @@
 .container{
 	min-height: 100vh;
 	display: flex;
+	background-color: #609cb9;
 }
 
 /* Sidebar */
@@ -21,10 +22,11 @@
 	justify-content: space-between;
 	display: flex;
 	flex-direction: column;
-	border-right: 1px solid #373A3C;
+	border-right: 3px solid #eeb6dcd2;
 	position: fixed;
 	transition: all 0.8s;
 	min-width: 82px;
+	z-index: 1;
 }
 
 #sidebar h2 {
@@ -49,9 +51,12 @@
 	border-radius: 8px;
 	cursor: pointer;
 	padding: 14px;
+	padding: 16px;
 }
 .side-item.active{
-	background-color: #2790C6;
+	background-color: #eeb6dcd2;
+	border-radius: 8px 0px 0px 8px;
+	width: 100%;
 }
 .side-item:hover:not(.active){
 	background-color: #10496e;
@@ -111,6 +116,7 @@
 }
 #sidebar.open-sidebar {
 	min-width: 15%;
+	border-right: 5px solid #eeb6dcd2;
 }
 #sidebar.open-sidebar .item-descricao {
 	width: 200px;
@@ -130,21 +136,14 @@
 	transition: 0.8s;
 }
 #content h2 {
-    color: #006599;
-    margin-bottom: 30px;
+    color: #2790C6;
+	font-size: 35px;
+	padding: 20px;
 }
 
 #content h1 {
     font-size: 48px;
 }
-#content h2 {
-    font-size: 35px;
-}
-
-section {
-    padding-left: 50px;
-}
-
 /*Bem vindo*/
 #sessao-bemvindo {
     width: 100%;
@@ -158,7 +157,7 @@ section {
 	justify-content: space-evenly;
 }
 #sessao-bemvindo .banner {
-    height: 500px;
+    height: 600px;
     background-image: url(../img/banner2.jpg);
     background-position: center;
     background-size: cover;
@@ -166,6 +165,7 @@ section {
 	align-items: center;
 	justify-content: center;
 }
+
 #sessao-bemvindo h1 {
 	display: flex;
 	color: #2790C6;
@@ -188,7 +188,7 @@ section {
 	clear: both;
 }
 
-.sessao-minibanner {
+.sessao-bemvindo-content .sessao-minibanner {
 	width: 50%;
 	height: 500px;
 	border-radius: 10px;
@@ -204,6 +204,12 @@ section {
 	width: 50%;
 }
 
+.sessao-trabalho h4, .sessao-descricao h3 {
+	font-size: 22px;
+	color: #2790C6;
+	margin-bottom: 20px;
+	text-align: center;
+}
 .sessao-descricao p, .sessao-descricao span {
 	line-height: 2;
 	font-size: 16px;
@@ -235,30 +241,57 @@ section {
 
 #sessao-sobre .sessao-minibanner {
 	float: right;
-	box-shadow: rgba(255, 255, 255, 0.25) 2px 12px 55px;
 	margin-right: 50px;
 	border-radius: 10px;
-	background-image: url('../img/banner3.jpg');
 	background-position: center;
 	background-size: cover;
 	margin: 20px;
 	width: 50%;
 }
 #sessao-sobre {
-	background-image: url(../img/papel-preto-texturizado-liso.jpg);
+	background-image: url(../img/copie-ingredientes-de-espaco-para-biscoitos.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
 }
-
+.sessao-content {
+	background-color: #0000009e;
+	padding: 50px;
+}
+.sessao-trabalho {
+	background-color: #373a3ce3;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	padding: 20px;
+}
 .sessao-trabalho p {
-	color: #ffffffd8;
+	color: #ffffffb7;
 	line-height: 2;
 	font-size: 16px;
-	margin-bottom: 30px;
+	text-align: center;
 }
-.sessao-trabalho strong, h4 {
-	color: #006599;
+.sessao-trabalho strong {
 	font-size: 25px;
-	margin-bottom: 50px;
+	color: #2790C6;	
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
 }
+.sessao-content h2 {
+	text-align: center;
+	font-weight: 600;
+}
+
+.sessao-trabalho h4 {
+	background-color: #2790C6;
+	color: #FFF;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
 /* galerias */
 
 .banner-galeria {
