@@ -44,7 +44,7 @@
                             </li>
 
                             <li class="side-item">
-                                <a href="#sessao-doces1">
+                                <a href="#slideshow-container">
                                     <i class="fa-solid fa-cake-candles" style="color: #f7f6fce1;"></i>
                                     <span class="item-descricao">
                                         Doces
@@ -53,7 +53,7 @@
                             </li>
 
                             <li class="side-item">
-                                <a href="#sessao-contato">
+                                <a href="#sessao-content">
                                     <i class="fa-solid fa-envelopes-bulk" style="color: #ffffff;"></i>
                                     <span class="item-descricao">Entre Em Contato</span>
                                 </a>
@@ -134,21 +134,38 @@
                             </div>
                         </div>
                     </section>
-                    <div class="slideshow-container">
+                    <div class="slideshow-container" id="slideshow-container">
+                        <h2>Conheça Nossos Produtos <hr></h2>
+                       
                         <div class="slideshow fade">
-                            <div class="numeracao">1 / 3</div>
+                            <div class="numeracao">1 / 6</div>
                             <img src="img/2150649274.jpg" alt="slide">
                             <div class="legenda">R$ 19,99</div>
                         </div>
                         <div class="slideshow fade">
-                            <div class="numeracao">2 / 3</div>
+                            <div class="numeracao">2 / 6</div>
                             <img src="img/galeria11.jpg" alt="Slide">
                             <div class="legenda">R$ 15,99</div>
                         </div>
                         <div class="slideshow fade">
-                            <div class="numeracao">3 / 3</div>
+                            <div class="numeracao">3 / 6</div>
+                            <img src="img/galeria10.jpg" alt="Slide">
+                            <div class="legenda">R$ 3,99</div>
+                        </div>
+                        <div class="slideshow fade">
+                            <div class="numeracao">4 / 6</div>
                             <img src="img/galeria10.jpg" alt="Slide">
                             <div class="legenda">R$ 9,99</div>
+                        </div>
+                        <div class="slideshow fade">
+                            <div class="numeracao">5 / 6</div>
+                            <img src="img/galeria10.jpg" alt="Slide">
+                            <div class="legenda">R$ 5,99</div>
+                        </div>
+                        <div class="slideshow fade">
+                            <div class="numeracao">6 / 6</div>
+                            <img src="img/galeria10.jpg" alt="Slide">
+                            <div class="legenda">R$ 1,99</div>
                         </div>
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -158,8 +175,24 @@
                         <span class="dot" onclick="currentSlide(1)"></span>
                         <span class="dot" onclick="currentSlide(2)"></span>
                         <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
                     </div>
-                   
+                    <section id="sessao-contato">
+                        <div class="sessao-content" id="sessao-content">
+                            <h2>Entre em Contato<hr></h2>
+                            <form id="contact-form" action="#" method="POST">
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="name" required>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                                <label for="message">Mensagem:</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </section>
                     <footer>
                         <p>2024 © Copyright Adrian-Dev. Todos os direitos reservados.
                         </p>

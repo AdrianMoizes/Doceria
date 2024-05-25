@@ -296,12 +296,23 @@
     position: relative;
     margin: auto;
 	margin-left: 19px;
+	background-color: #006599;
 }
+.slideshow-container h2 {
+	background-color: #006599;
+	color: #FFF;
+	text-align: center;
+	font-weight: 500;
+	padding: 50px;
+	font-size: 28px;
+}
+
 .slideshow {
     display: none;
 }
 .slideshow img { 
 	width:100%;
+	height: 60vh;
  }
 .prev,
 .next {
@@ -345,7 +356,6 @@
     top: 0;
 }
 .paginacao { 
-  
     width:100%; 
     float:left;
     margin: 10px 0;
@@ -353,17 +363,16 @@
 }
 .dot {
     cursor: pointer;
-    height: 13px;
-    width: 13px;
+    height: 2px;
+    width: 50px;
     margin: 0 4px;
-    border-radius: 50px;
-    background-color: #007cff;
+    background-color: #eeb6dcd2;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 .ativo,
 .dot:hover {
-    background-color: #242424;
+    background-color: #006599;
 }
 .fade {
     -webkit-animation-name: fade;
@@ -390,21 +399,62 @@
 /*960PX BREAKPOINT - Ajustando o texto para desktop*/
 @media (min-width:60em){
     .legenda   { font-size:2em; padding:8px; }
-    .paginacao { margin:20px 0; }
-    .dot       { width:18px; height:18px; }
+	.slideshow img { 
+		width:100%;
+		height: 100vh;
+	 }
 }
 
+/* formulario */
+.sessao-content h2 {
+	margin-top: 200px;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+	height: 60vh;
+}
 
+#contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+	color: #ccc;
+}
 
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	color: #006599;
+}
+
+#contact-form button {
+    padding: 10px;
+    background-color: #f7a76c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #f57c42;
+}
 
 /* footer */
 
 footer {
 	padding: 20px;
-	color: #006599;
+	color: #f2f2f2;
+	background-image: url(../img/galeria12.jpg);
+	background-position: bottom;
 }
 
 footer p {
 	text-align: center;
-	font-weight: bold;
 }
