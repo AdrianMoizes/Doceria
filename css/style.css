@@ -23,7 +23,7 @@
 	flex-direction: column;
 	border-right: 3px solid #eeb6dcd2;
 	position: fixed;
-	transition: all 0.8s;
+	transition:  0.6s;
 	min-width: 82px;
 	z-index: 1;
 }
@@ -126,13 +126,13 @@
 }
 /* Conteudo */
 #content {
-	transition: all 0.6s;
+	transition:  0.6s;
 	margin-left: 100px; 
     flex-grow: 1;
 }
 #content.open-bar{
 	margin-left: 300px;
-	transition: 0.8s;
+	transition: 0.6s;
 }
 .sessao-content h2 {
     color: #eeb6dcd2;
@@ -389,16 +389,9 @@
         opacity: 1;
     }
 }
-/*960PX BREAKPOINT - Ajustando o texto para desktop*/
-@media (min-width:60em){
-    .legenda   { font-size:20px; padding:8px; }
-	.slideshow img { 
-		width:100%;
-	 }
-}
 
 /* formulario */
-.sessao-content h2 {
+#sessao-content h2 {
 	margin-top: 200px;
 }
 #contact-form {
@@ -450,4 +443,181 @@ footer {
 
 footer p {
 	text-align: center;
+}
+footer a {
+	display: none;
+}
+/*Mobile*/
+@media(max-width:425px){
+	/* Sidebar */
+#sidebar {
+   display: none;
+}
+
+.item-descricao{
+	text-align: start;
+}
+#side-itens {
+	gap: 10px;
+}
+.side-item.active{
+	background-color: #eeb6dc5d;
+	border-radius: 8px;
+	width: auto;
+	
+}
+
+.side-item a {
+	align-items: start;
+	justify-content: start;
+}
+.side-item a i {
+	align-items: start;
+	justify-content: start;
+}
+.logo-doceria {
+    width: 30px;
+    height: 30px;	
+}
+#open-btn-icon{
+	transition: transform 0.6s;
+}
+.item-descricao {
+	width: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#sidebar.open-sidebar {
+	width: 57%;
+	border-right: 5px solid #eeb6dcd2;
+}
+
+/* Conteudo */
+#content {
+	margin-left: 0px; 
+}
+
+#content h1 {
+    font-size: 20px;
+}
+
+/*Bem vindo*/
+.sessao-bemvindo-content {
+    padding: 10px;
+	flex-direction: column;
+	justify-content: center;
+}
+#sessao-bemvindo .banner {
+    height: 300px;
+}
+#sessao-bemvindo h1 {
+	padding: 10px;
+	font-size: 20px;
+}
+.sessao-bemvindo-content .sessao-minibanner {
+	width: auto;
+	height: 400px;
+}
+.sessao-descricao {
+	left: 0;
+	margin: 0;
+	width: 90%;
+	padding: 10px;
+}
+.sessao-trabalho h4, .sessao-descricao h3 {
+	font-size: 16px;
+}
+.sessao-descricao p, .sessao-descricao span {
+	font-size: 14px;
+}
+#mais {
+	display: none;
+}
+.sessao-bemvindo-btn {
+	font-size: 14px;
+}
+.sessao-bemvindo-btn:hover:hover {
+	background-color: #609cb9;
+    color: #ffffff;
+}
+/* sessao sobre */
+
+#sessao-sobre {
+	margin-left: 0px;
+}
+.sessao-trabalho img {
+	width: 90%;
+	margin: 20px 5px;
+}
+.sessao-trabalho p {
+	color: #ffffffb7;
+	font-size: 15px;
+}
+.sessao-trabalho strong {
+	font-size: 18px;
+	margin-top: 20px;
+}
+.sessao-content h2 {
+	font-weight: 500;
+	font-size: 22px;
+}
+/*Galeria*/
+.slideshow-container {
+	margin-left: 0px;
+}
+
+.slideshow img { 
+	width:100%;
+ }
+.prev,
+.next {
+    font-size: 12px;
+}
+.legenda {
+	margin: 15px;
+	font-size: 12px;
+	width: 90%;
+	left: 0;
+	top: 99%;
+	background-color: rgba(0, 0, 0, 0.862);
+}
+
+.legenda h3{
+	font-size: 14px;
+	padding: 5px;
+}
+.realcar-valor {
+	font-size: 12px;
+}
+.dot {
+    height: 0px;
+    width: 0px;
+    margin: 0 4px;
+}
+footer {
+	padding: 10px;
+}
+footer p {
+	font-size: 12px;
+}
+footer a {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-color: #609cb9; 
+	color: white; 
+	text-align: center;
+	line-height: 60px;
+	border-radius: 50%;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px; 
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.587);
+	font-size: 14px;
+}
+footer a:hover {
+	background-color: #10496e;
+}
 }
