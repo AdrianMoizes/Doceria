@@ -296,15 +296,6 @@
     position: relative;
     margin: auto;
 	margin-left: 19px;
-	background-color: #006599;
-}
-.slideshow-container h2 {
-	background-color: #006599;
-	color: #FFF;
-	text-align: center;
-	font-weight: 500;
-	padding: 50px;
-	font-size: 28px;
 }
 
 .slideshow {
@@ -312,7 +303,6 @@
 }
 .slideshow img { 
 	width:100%;
-	height: 60vh;
  }
 .prev,
 .next {
@@ -337,33 +327,36 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 .legenda {
-    width: auto;
-    color: #fdfdfd;
+    width: 60%;
+    color: #f2f2f2;
     font-size: 0.9em;
     padding:5px;
     position: absolute;
-    bottom: 18%;
+    top: 2%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    left: 10%;
+    background-color: rgba(0, 0, 0, 0.423);
+    left: 30px;
 	border-radius: 8px;
+	margin: 10px;
 }
-.numeracao {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
+
 .paginacao { 
     width:100%; 
-    float:left;
-    margin: 10px 0;
+    float:inline-end;
     text-align: center;
+}
+.realcar-valor {
+	color: #f7a76c;
+	
+}
+.legenda h3{
+	font-size: 32px;
+	padding: 20px;
+	color: #f57c42;
 }
 .dot {
     cursor: pointer;
-    height: 2px;
+    height: 4px;
     width: 50px;
     margin: 0 4px;
     background-color: #eeb6dcd2;
@@ -398,10 +391,9 @@
 }
 /*960PX BREAKPOINT - Ajustando o texto para desktop*/
 @media (min-width:60em){
-    .legenda   { font-size:2em; padding:8px; }
+    .legenda   { font-size:20px; padding:8px; }
 	.slideshow img { 
 		width:100%;
-		height: 100vh;
 	 }
 }
 
@@ -444,6 +436,7 @@
 
 #contact-form button:hover {
     background-color: #f57c42;
+	transition: .5s;
 }
 
 /* footer */
